@@ -1,98 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <title>URL SHORTNER </title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/4.5/examples/pricing/"
-    />
+  <title>URL SHORTNER </title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      p{
-        font-size: 25px;
-        color: rgb(72, 72, 72);
-        font-family: 'source sans pro', arial;
-      }
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/pricing/" />
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet" />
-  </head>
-  <header>
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4" style="font-size: 70px; color:#0186DA ;font-family: asap, arial, tahoma; font-weight: 900;">URL SHORTNER</h1>
-      <p class="lead"> 
-      </p>
-    </div>
-  </header>
-  <body style="background-color: #faeef2; ">
-     <div class="container mt-5">
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm">
-          <div class="card-body">
-            <h1 class="pb-5" style=" font-size: 50px; font-weight: 900; color: #505050; font-family:asap, arial, tahoma">Paste the URL to be shortened</h1>
-            <form method="POST" action="">
-              <div class="row " >
-                <div class="col-12 " > 
-                  <input
-                    type="text"
-                    class="form-control w-80 p-3" style="font-size: 25px"
-                    placeholder="Enter link here"
-                    name="url-link"
-                  />
-                </div>
-                  <button type="submit" style="color: white; font-weight: 700; background-color: #0186DA ;font-family:asap, arial, tahoma " class="btn btn-primary btn-lg mx-auto m-2">SHORTEN URL</button>
-                </div>
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="/static/styles.css" rel="stylesheet" />
+</head>
+<header>
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">
+      URL SHORTNER</h1>
+  </div>
+</header>
+
+<body>
+  <div class="container mt-5">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h1 class="pb-5">
+            Paste the URL to be shortened</h1>
+          <form method="POST" action="">
+            <div class="row ">
+              <div class="col-12 ">
+                <input type="text" class="form-control w-80 p-3" placeholder="Enter link here" name="url-link" />
               </div>
-            </form>
-            <p class="px-5 mx-5">Use our URL Shortener to create a shortened link making it easy to remember.</p>
-            <p class="px-5 mx-5">ShortURL.at is a free tool to shorten a URL or reduce a link. Use our URL Shortener to create a shortened link making it easy to remember.</p>
+              <button type="submit"
+                style="color: white; font-weight: 700; background-color: #0186DA ;font-family:asap, arial, tahoma "
+                class="btn btn-primary btn-lg mx-auto m-2">SHORTEN URL</button>
             </div>
-          </div>
         </div>
-        <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-      ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-      ></script>
-     </body>
-     </html>
+        </form>
+        <p class="px-5 mx-5">Use our URL Shortener to create a shortened link making it easy to remember.</p>
+        <p class="px-5 mx-5">ShortURL.at is a free tool to shorten a URL or reduce a link. Use our URL Shortener to
+          create a shortened link making it easy to remember.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
