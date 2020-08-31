@@ -15,8 +15,6 @@ mysql = MySQL(app)
 
 
 # routing - connecting a url to a python function
-
-
 @app.route('/', methods=['GET', 'POST'])  # decorator
 def index():
     if request.method == "POST":
