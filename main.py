@@ -15,7 +15,8 @@ def index():
 @app.route('/<url_id>')
 def url_id(url_id):
     cur = mysql.connection.cursor()
-    check_url = cur.execute("SELECT url FROM shorturl WHERE shortuuid=%s",url_id)
+    check_url = cur.execute('SELECT url FROM shorturl where shortuuid=%s', [url_id])
+    
     if check_url:
         return redirect(check_url.url)
     else:
