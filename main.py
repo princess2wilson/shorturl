@@ -2,6 +2,7 @@ from flask import Flask, request, redirect, render_template, url_for
 from flask_mysqldb import MySQL
 import shortuuid
 from config import app
+from insert_get_url import get_short_url_row, insert_url
 
 
 mysql = MySQL(app)
@@ -14,25 +15,19 @@ def index():
 
 @app.route('/<url_id>')
 def url_id(url_id):
-    cur = mysql.connection.cursor()
-    check_url = cur.execute('SELECT url FROM shorturl where shortuuid=%s', [url_id])
-    
-    if check_url:
-        return redirect(check_url.url)
+    row = get_short_url_row(url_id)
+    if row:
+        return redirect(row[1])
     else:
         return "wrong url"
 
 
-@app.route('/processor', methods=['POST'])  # decorator
-def pro():
+@ app.route('/new-link', methods=['POST'])  # decorator
+def new_link():
     urlid = shortuuid.ShortUUID().random(length=4)
     url = request.form['url-link']
-    new_link = urlid
-    cur = mysql.connection.cursor()
-    cur.execute(
-        "INSERT INTO shorturl(url,shortuuid) VALUES (%s,%s)", [url, urlid])
-    mysql.connection.commit()
-    return 'http://127.0.0.1:5000/'+new_link
+    insert_url(url, urlid)
+    return 'http://127.0.0.1:5000/'+urlid
 
 
 if __name__ == '__main__':
