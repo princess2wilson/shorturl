@@ -22,12 +22,13 @@ def url_id(url_id):
         return "wrong url"
 
 
-@ app.route('/new-link', methods=['POST'])  # decorator
-def new_link():
+@ app.route('/short-url', methods=['POST'])  # need to change this name ??
+def short_url():
     urlid = shortuuid.ShortUUID().random(length=4)
     url = request.form['url-link']
     insert_url(url, urlid)
-    return 'http://127.0.0.1:5000/'+urlid
+    new_url = 'http://short-ly/'+urlid
+    return render_template('new_link.html', new_url=new_url)
 
 
 if __name__ == '__main__':

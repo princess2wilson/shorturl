@@ -41,3 +41,6 @@ button {
   font-family: asap, arial, tahoma;
 }
 
+.border-rad{
+  border-radius: 100px;
+}
