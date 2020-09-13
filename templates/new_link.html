@@ -19,7 +19,7 @@
     <link href="/static/styles.css" rel="stylesheet" />
 </head>
 <header>
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4">URL SHORTNER</h1>
     </div>
 </header>
@@ -32,8 +32,7 @@
                     <h1 class="pb-5">Your Shortened URL</h1>
                     <div class="row ">
                         <div class="col-12 ">
-                            <input id="myInput" type="text" class="myInput new_link form-control w-80 p-4 border-rad "
-                                value="{{new_url}}" readonly />
+                            <input id="myInput" type="text" class="myInput new_link form-control w-80 p-4 border-rad " value="{{new_url}}" readonly />
                         </div>
                         <button onclick="myFunction()" class=" copyButton btn btn-primary btn-lg mx-auto m-4">Copy
                             URL</button>
@@ -43,7 +42,7 @@
                                 copyText.select();
                                 copyText.setSelectionRange(0, 99999);
                                 document.execCommand("copy");
-                                alert("Copied")
+                                alert("URL HAS BEEN COPIED");
                             }
                         </script>
                     </div>
