@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 14px;
-  background-color: #faeef2;
+  background-color: white;
 }
 @media (min-width: 768px) {
   html {
@@ -41,6 +41,22 @@ button {
   font-family: asap, arial, tahoma;
 }
 
-.border-rad{
+.border-rad {
   border-radius: 100px;
 }
+
+input.new_link[type="text"] {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.new_url{
+  font-family: asap, arial, tahoma;
+  text-align: center;
+}
+
